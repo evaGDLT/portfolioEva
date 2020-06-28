@@ -4,14 +4,75 @@ new fullpage('#fullpage', {
     scrollHorizontally: true,
     anchors: ['principal'],
     licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE'
+        // afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex) {
+        //     console.log("esto es al cargar el fullpage")
+        //     changeMenu(index);
+        //     // console.log(index);
+        //     // console.log(slideAnchor);
+        //     // console.log(slideIndex)
+        // }
+
 });
 
+// function changeMenu(index) {
+//     let hovers = document.getElementsByClassName('dropdown');
+//     if (index.anchor == "slide1") {
+//         hovers[0].classList.add("underline");
+//         hovers[1].classList.remove("underline");
+//         hovers[2].classList.remove("underline");
+//         hovers[3].classList.remove("underline");
+//     }
+//     if (index.anchor == "slide2") {
+//         hovers[1].classList.add("underline");
+//         hovers[0].classList.remove("underline");
+//         hovers[2].classList.remove("underline");
+//         hovers[3].classList.remove("underline");
+//     }
+//     if (index.anchor == "slide3") {
+//         hovers[2].classList.add("underline");
+//         hovers[1].classList.remove("underline");
+//         hovers[3].classList.remove("underline");
+//         hovers[0].classList.remove("underline");
+//     }
+//     if (index.anchor == "slide4") {
+//         hovers[3].classList.add("underline");
+//         hovers[1].classList.remove("underline");
+//         hovers[2].classList.remove("underline");
+//         hovers[0].classList.remove("underline");
+//     }
+
+// }
 
 function moveTo(slide) {
-    console.log("me he metido")
+    //Si no estoy en el slide de inicio, elimino los hovers para evitar redundancia
+    let hovers = document.getElementsByClassName('dropdown');
+    if (slide !== 0) {
+        for (var i = 0; i < hovers.length; i++) {
+            hovers[i].classList.add("no-hover");
+            if (i == (slide - 1)) {
+                hovers[slide - 1].classList.add("underline")
+            } else {
+                hovers[i].classList.remove("underline")
+            }
+        }
+
+
+    } else {
+        for (var i = 0; i < hovers.length; i++) {
+            hovers[i].classList.remove("no-hover");
+            if (i == 3) {
+                hovers[3].classList.add("underline")
+            } else {
+                hovers[i].classList.remove("underline")
+            }
+        }
+
+    }
+
+    // hovers[slide].classList.add("underline")
     fullpage_api.moveTo("principal", slide);
 }
-
+//Funciones para mostrar el rango de conocimiento de las tecnologias
 function hoverTecnologies(element, nStars) {
     element.setAttribute('src', `./imgs/star${nStars}.png`);
 }
@@ -48,12 +109,4 @@ function unhoverTecnologies(element, tecnology) {
         element.setAttribute('src', 'https://miro.medium.com/max/1120/0*uSskDBZlO4EMZm-K.png');
     }
 
-}
-
-function hoverProject(element, tipoRepo) {
-
-}
-
-function unhoverProject(element) {
-    element.setAttribute('src', `./imgs/portfolio.png`);
 }
