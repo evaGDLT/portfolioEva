@@ -1,0 +1,155 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Eva García</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- FullPage Alvaro Trigo -->
+    <link rel="stylesheet" href="./css/fullpage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <script src="./js/fullpage.js"></script>
+
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Asap&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <header class="navBar">
+        <div class="dropdown">
+            <a onclick="moveTo(1)">Sobre mí</a>
+            <div class="dropdown-menu">
+                <p>
+                    Ingeniera de Telecomunicaciones reconducida hacia el Software. A ratos profe de tenis, a ratos de pádel y siempre escaladora. Con más intereses que tiempo para ellos y trotamundos.
+                </p>
+                <div class="div-fotos">
+                    <img class="mini-foto" src="./imgs/escalada1.jpeg" />
+                    <img class="mini-foto" src="./imgs/viaje.jpeg" />
+                    <img class="mini-foto" src="./imgs/escalada2.jpeg" />
+                    <img class="mini-foto" src="./imgs/viajeC.jpg" />
+                </div>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a onclick="moveTo(2)">Skills</a>
+            <div class="dropdown-menu">
+                <div class="div-tecnologias">
+                    <img class="icono" src="https://www.w3.org/html/logo/downloads/HTML5_Logo_256.png" alt="">
+                    <img class="icono" src="http://www.myiconfinder.com/uploads/iconsets/256-256-8b61de4c84033266e15317a6eb9fda2d-css3.png" alt="">
+                    <img class="icono" src="https://cdn.iconscout.com/icon/free/png-256/sass-13-1175092.png" alt="">
+                    <img class="icono" src="http://www.cantabriatic.com/wp-content/uploads/2015/11/javascript-shield-logo.png" alt="">
+                    <img class="icono" src="https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/000/300/square_256/angular2.png" alt="">
+                    <img class="icono" src="https://cdn.freebiesupply.com/logos/large/2x/nodejs-icon-logo-png-transparent.png" alt="">
+                    <img class="icono" src="http://www.tuprogramacion.com/images/mysql.svg" alt="">
+                    <img class="icono" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Ionic_Logo.svg/1200px-Ionic_Logo.svg.png" alt="">
+                    <img class="icono" src="https://cdn.iconscout.com/icon/free/png-256/git-225996.png" alt="">
+                    <img class="icono" src="https://miro.medium.com/max/1120/0*uSskDBZlO4EMZm-K.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a onclick="moveTo(3)">Proyectos</a>
+            <div class="dropdown-menu">
+                <div class="div-proyectos">
+                    <img class="mini-foto" src="./imgs/dataCenter1.png" />
+                    <img class="mini-foto" src="./imgs/fleets.png" />
+                    <img class="mini-foto" src="./imgs/dataCenter2.png" />
+                </div>
+            </div>
+        </div>
+        <div>
+            <a onclick="moveTo(0)">Inicio</a>
+        </div>
+    </header>
+    <div id="fullpage">
+        <div class="section">
+            <div class="slide" id="main-section" data-anchor="slide1">
+                <div id="container1">
+                    <div id="info">
+                        <h2>Eva Garcia de la Torre</h2>
+                        <br>
+                        <h1>Desarrolladora Full Stack</h1>
+                    </div>
+                </div>
+                <div id="container2"></div>
+            </div>
+            <div class="slide" data-anchor="slide2">
+                <div id="section-color">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet totam reiciendis expedita, enim iusto voluptatibus officiis maiores inventore nam quae. Cum, ipsam asperiores! Ipsa vero alias eius nobis totam? Sed. Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Magni voluptatibus vero vel repellendus debitis, perspiciatis soluta aperiam, eveniet in ipsum, quidem sint eius asperiores possimus quae rem dolorum quas adipisci.
+                    </p>
+                    <div class="div-fotosGrande">
+                        <img class="mini-foto" src="./imgs/escalada1.jpeg" />
+                        <img class="mini-foto" src="./imgs/viaje.jpeg" />
+                        <img class="mini-foto" src="./imgs/escalada2.jpeg" />
+                        <img class="mini-foto" src="./imgs/viajeC.jpg" />
+                    </div>
+                </div>
+            </div>
+            <div class="slide" data-anchor="slide3">
+                <div id="section-color">
+                    <div class="div-tecnologias">
+                        <!-- <div class="div-imagen">
+                            <div>Hola</div>
+                            <img class="icono desvanecer" src="https://www.w3.org/html/logo/downloads/HTML5_Logo_256.png" alt="" />
+                        </div> -->
+                        <img class="icono" src="https://www.w3.org/html/logo/downloads/HTML5_Logo_256.png" alt="" onmouseover="hoverTecnologies(this, 3)" onmouseout="unhoverTecnologies(this, 'html5')" />
+                        <img class="icono" src="http://www.myiconfinder.com/uploads/iconsets/256-256-8b61de4c84033266e15317a6eb9fda2d-css3.png" alt="" onmouseover="hoverTecnologies(this, 3)" onmouseout="unhoverTecnologies(this, 'css3')">
+                        <img class="icono" src="https://cdn.iconscout.com/icon/free/png-256/sass-13-1175092.png" alt="" onmouseover="hoverTecnologies(this, 3)" onmouseout="unhoverTecnologies(this, 'sass')">
+                        <img class="icono" src="http://www.cantabriatic.com/wp-content/uploads/2015/11/javascript-shield-logo.png" alt="" onmouseover="hoverTecnologies(this, 4)" onmouseout="unhoverTecnologies(this, 'js')">
+                        <img class="icono" src="https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/000/300/square_256/angular2.png" alt="" onmouseover="hoverTecnologies(this, 4)" onmouseout="unhoverTecnologies(this, 'angular')">
+                        <img class="icono" src="https://cdn.freebiesupply.com/logos/large/2x/nodejs-icon-logo-png-transparent.png" alt="" onmouseover="hoverTecnologies(this, 3)" onmouseout="unhoverTecnologies(this,'node')">
+                        <img class="icono" src="http://www.tuprogramacion.com/images/mysql.svg" alt="" onmouseover="hoverTecnologies(this, 3)" onmouseout="unhoverTecnologies(this, 'mysql')">
+                        <img class="icono" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Ionic_Logo.svg/1200px-Ionic_Logo.svg.png" alt="" onmouseover="hoverTecnologies(this, 3)" onmouseout="unhoverTecnologies(this, 'ionic')">
+                        <img class="icono" src="https://cdn.iconscout.com/icon/free/png-256/git-225996.png" alt="" onmouseover="hoverTecnologies(this, 4)" onmouseout="unhoverTecnologies(this, 'git')">
+                        <img class="icono" src="https://miro.medium.com/max/1120/0*uSskDBZlO4EMZm-K.png" alt="" onmouseover="hoverTecnologies(this, 2)" onmouseout="unhoverTecnologies(this, 'cordova')">
+                    </div>
+                </div>
+            </div>
+            <div class="slide" data-anchor="slide4">
+                <div id="section-color">
+                    <div class="div-proyectosGrande">
+                        <img class="mini-foto" src="./imgs/dataCenter1.png" />
+                        <img class="mini-foto" src="./imgs/fleets.png" />
+                        <img class="mini-foto" src="./imgs/dataCenter2.png" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <section id="main-section">
+        <div id="container1">
+            <div id="info">
+                <h2>Eva Garcia de la Torre</h2>
+                <br>
+                <h1>Desarrolladora Full Stack</h1>
+            </div>
+        </div>
+    </section> -->
+    <section class="footer">
+        <a href="https://www.instagram.com/evs14/">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://twitter.com/evss_">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://github.com/evaGDLT">
+            <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/eva-garcia-de-la-torre-522a51137/">
+            <i class="fab fa-linkedin"></i>
+        </a>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
