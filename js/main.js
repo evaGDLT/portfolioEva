@@ -108,5 +108,13 @@ function unhoverTecnologies(element, tecnology) {
     if (tecnology == "cordova") {
         element.setAttribute('src', 'https://miro.medium.com/max/1120/0*uSskDBZlO4EMZm-K.png');
     }
+    if (tecnology == "java") {
+        element.setAttribute('src', 'https://elblogdecodigo.files.wordpress.com/2014/12/java_logo.png');
+    }
+    if (tecnology == "mongo") {
+        element.setAttribute('src', 'https://cdn.worldvectorlogo.com/logos/mongodb.svg');
+    }
+
+
 
 }
